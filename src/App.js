@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Header from "./components/header/header";
+import { BackTop } from "antd";
+import "./App.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <Header />
+      <BackTop>
+        <div
+          className="ant-back-top-inner"
+          style={{
+            backgroundColor: "#1088e9",
+            height: "40px",
+            width: "40px",
+            lineHeight: "40px",
+            borderRadius: "4px",
+            color: "white",
+            textAlign: "center",
+            fontSize: "20px"
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          UP
+        </div>
+      </BackTop>
     </div>
   );
 }
